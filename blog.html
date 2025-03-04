@@ -9,9 +9,7 @@
     <!-- google font poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Daisy UI and tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -25,10 +23,6 @@
                 extend: {
                     colors: {
                         bodybg: "#F4F7FF",
-                        primarybg: "#FFF9F4",
-                        btnbg: "#3752FD",
-                        cardbg: "#F9DF8A",
-                        footerbg: "#FFDC2680",
                     },
                     fontFamily: {
                         poppins: ["Poppins", "serif"],
@@ -46,8 +40,8 @@
             <h1 class="text-4xl font-light">Dev<span class="font-bold">Board</span></h1>
         </div>
 
-        <div class="flex items-center justify-center">
-            <button class="btn btn-primary">Back to Desk</button>
+        <div id="back-to-desk" class="flex items-center justify-center">
+            <button id="back-to-desk" class="btn btn-primary">Back to Desk</button>
         </div>
     </header>
 
@@ -77,13 +71,9 @@
             <hr class="border-dashed">
             <div class="p-4">
                 <ul class="p-4 list-disc">
-                    <li><span class="font-bold">innerHTML: </span>It is used to access the html content inside an
-                        element including html tags </li>
-                    <li><span class="font-bold">innerText: </span>It is used to get or set the visible text content of
-                        an element </li>
-                    <li><span class="font-bold">textContent: </span>It helps us to access the raw text content(doesn't
-                        care about the text styles) inside an element including text from hidden elements unlinke
-                        innerText </li>
+                    <li><span class="font-bold">innerHTML: </span>It is used to access the html content inside an element including html tags </li>
+                    <li><span class="font-bold">innerText: </span>It is used to get or set the visible text content of an element </li>
+                    <li><span class="font-bold">textContent: </span>It helps us to access the raw text content(doesn't care about the text styles) inside an element including text from hidden elements unlinke innerText </li>
                 </ul>
             </div>
         </div>
@@ -94,9 +84,8 @@
             </div>
             <hr class="border-dashed">
             <div class="p-4">
-                <p><span class="font-bold">Event delegation</span></span> is a technique which helps to handle an event
-                    by the child elements which was added for the parent element. It brings more efficiency to our
-                    program.</p>
+                <p><span class="font-bold">Event delegation</span></span> is a technique which helps to handle an event by the child elements which was added for the parent element. It brings more efficiency to our program.
+                </p>
             </div>
         </div>
         <div class="my-5  rounded-2xl bg-white">
@@ -106,8 +95,7 @@
             </div>
             <hr class="border-dashed">
             <div class="p-4">
-                <p><span class="font-bold">Event bubbling</span></span> is a DOM mechanism where an event is triggered
-                    on a child element propagates upward through its ancestors in the DOM tree.</p>
+                <p><span class="font-bold">Event bubbling</span></span> is a DOM mechanism where an event is triggered on a child element propagates upward through its ancestors in the DOM tree.</p>
             </div>
         </div>
         <div class="my-5  rounded-2xl bg-white">
@@ -128,7 +116,7 @@
     </section>
 
 
-    <script src="JS/file.js"></script>
+    <script src="JS/script2.js"></script>
 </body>
 
 </html>
