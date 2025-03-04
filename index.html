@@ -43,10 +43,10 @@
         <div class="flex gap-8 items-center justify-center">
             <div class="bg-bodybg p-3 rounded-3xl flex gap-4 items-center">
                 <img src="assets/checkbox.png" alt="">
-                <h2 class="text-3xl font-semibold">23</h2>
+                <h2 id="num-of-completed-tasks" class="text-3xl font-semibold">23</h2>
             </div>
 
-            <div class="rounded-3xl bg-bodybg  p-2">
+            <div id="theme-btn" class="rounded-3xl bg-bodybg  p-2">
 
                 <img src="assets/theme-btn.png" alt="">
             </div>
@@ -60,31 +60,30 @@
             <div class=" p-4">
                 <div class="grid grid-rows-1 grid-cols-4 gap-4 rounded-2xl">
 
-                    <div class="flex items-center  gap-4 rounded-xl bg-bodybg p-5
+                    <div class="flex items-center  gap-4 rounded-xl bg-bodybg p-4
                     ">
                         <div class="bg-white p-2 rounded-3xl">
                             <img src="assets/checkbox.png" alt="">
                         </div>
                         <div class="flex flex-col justify-center ">
                             <p class="text-sm font-light">Task Assigned</p>
-                            <span class="text-3xl font-semibold">05</span>
+                            <span id="task-assigned" class="text-3xl font-semibold">6</span>
                         </div>
                     </div>
 
-                    <div style="background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);" class="bg-linear-to-r from-blue-500 to-blue-300  rounded-xl flex items-center gap-3 pl-6 col-span-2">
+                    <button style="background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);" class="bg-linear-to-r from-blue-500 to-blue-300  rounded-xl flex items-center gap-4 pl-7 col-span-2">
                         <img src="assets/board.png" alt="">
-                        <p class="text-xl text-white" id="something-new">Discover Something<br> New Today!</p>
+                        <p class="text-xl text-white text-left" id="something-new">Discover Something <br> New Today!</p>
 
-                    </div>
+                    </button>
 
-                    <div class="flex items-center  gap-4 rounded-xl bg-bodybg p-5
+                    <div class="flex items-center  gap-3 rounded-xl bg-bodybg p-4
                     ">
                         <div class="bg-white p-2 rounded-3xl">
                             <img src="assets/calender.png" alt="">
                         </div>
-                        <div class="flex flex-col justify-center ">
-                            <p class="text-sm font-light">Task Assigned</p>
-                            <span class="text-3xl font-semibold">05</span>
+                        <div id="date-display" class="flex items-end font-semibold text-sm ">
+
                         </div>
                     </div>
 
@@ -99,7 +98,7 @@
 
                 <div class="bg-bodybg rounded-2xl p-4 flex flex-col gap-5 ">
                     <div class="rounded-lg bg-white font-semibold text-center w-30">ShopEase</div>
-                    <p class="text-2xl font-semibold">Fix Mobile Button Issue</p>
+                    <p class="text-2xl font-semibold header-completed">Fix Mobile Button Issue</p>
 
                     <div class="bg-white text-sm font-light rounded-lg p-5">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</div>
                     <div class="flex gap-6">
@@ -107,13 +106,13 @@
                             <p class="font-medium text-sm">Deadline</p>
                             <p class="font-semibold text-sm ">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none">Completed</button>
+                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none  task-completed">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-bodybg rounded-2xl p-4 flex flex-col gap-9">
                     <div class="rounded-lg bg-white font-semibold text-center w-30">CloudSync</div>
-                    <p class="text-2xl font-semibold">Add Dark Mode</p>
+                    <p class="text-2xl font-semibold header-completed">Add Dark Mode</p>
 
                     <div class="bg-white text-sm font-light rounded-lg p-5">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect. </div>
                     <div class="flex gap-6">
@@ -121,13 +120,13 @@
                             <p class="font-medium text-sm">Deadline</p>
                             <p class="font-semibold text-sm ">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none">Completed</button>
+                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none task-completed">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-bodybg rounded-2xl p-4 flex flex-col gap-5">
                     <div class="rounded-lg bg-white font-semibold text-center w-30">SwiftPay</div>
-                    <p class="text-2xl font-semibold">Optimize Home Page</p>
+                    <p class="text-2xl font-semibold header-completed">Optimize Home Page</p>
 
                     <div class="bg-white text-sm font-light rounded-lg p-5">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</div>
                     <div class="flex gap-6">
@@ -135,13 +134,13 @@
                             <p class="font-medium text-sm">Deadline</p>
                             <p class="font-semibold text-sm ">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none">Completed</button>
+                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none task-completed">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-bodybg rounded-2xl p-4 flex flex-col gap-8">
                     <div class="rounded-lg bg-white font-semibold text-center w-30">Meta</div>
-                    <p class="text-2xl font-semibold">Add new emoji 🤲 </p>
+                    <p class="text-2xl font-semibold header-completed">Add new emoji 🤲 </p>
 
                     <div class="bg-white text-sm font-light rounded-lg p-5">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</div>
                     <div class="flex gap-6">
@@ -149,13 +148,13 @@
                             <p class="font-medium text-sm">Deadline</p>
                             <p class="font-semibold text-sm ">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none">Completed</button>
+                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none task-completed">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-bodybg rounded-2xl p-4 flex flex-col gap-5">
                     <div class="rounded-lg bg-white font-semibold text-center w-30">Google LLC</div>
-                    <p class="text-2xl font-semibold">Integrate OpenAI API </p>
+                    <p class="text-2xl font-semibold header-completed">Integrate OpenAI API </p>
 
                     <div class="bg-white text-sm font-light rounded-lg p-5">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</div>
                     <div class="flex gap-6">
@@ -163,13 +162,13 @@
                             <p class="font-medium text-sm">Deadline</p>
                             <p class="font-semibold text-sm ">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none">Completed</button>
+                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none task-completed">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-bodybg rounded-2xl p-4 flex flex-col gap-5">
                     <div class="rounded-lg bg-white font-semibold text-center w-30">Glassdoar</div>
-                    <p class="text-2xl font-semibold">Improve Job searching</p>
+                    <p class="text-2xl font-semibold header-completed">Improve Job searching</p>
 
                     <div class="bg-white text-sm font-light rounded-lg p-5">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</div>
                     <div class="flex gap-6">
@@ -177,7 +176,7 @@
                             <p class="font-medium text-sm">Deadline</p>
                             <p class="font-semibold text-sm ">21 March 2025</p>
                         </div>
-                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none">Completed</button>
+                        <button class="btn btn-primary bg-btnbg rounded-xl p-3 border-none task-completed">Completed</button>
                     </div>
                 </div>
 
@@ -192,18 +191,23 @@
                     <img src="assets/activity.png" alt="" class="h-7 ">
                     <h2 class="text-2xl">Activity Log</h2>
                 </div>
-                <button class="btn btn-primary bg-btnbg rounded-xl border-none">Clear History</button>
+                <button id="clear-history" class="btn btn-primary bg-btnbg rounded-xl border-none">Clear History</button>
             </div>
 
             <hr class="border-dashed">
-            <div class="flex flex-col items-center gap-4 p-6">
-                <p class="bg-bodybg rounded-xl p-4 mt-2">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                <p class="bg-bodybg rounded-xl mt-2 p-4">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-            </div>
+            <ul id="task-complete-msg" class="flex flex-col items-center gap-4 p-6">
+
+            </ul>
 
         </div>
 
-        <script src="JS/script1.js"></script>
+        <script src="JS/script.js"></script>
+        <script>
+            document.getElementById('something-new')
+                .addEventListener('click', function() {
+                    window.location.href = "blog.html";
+                });
+        </script>
 </body>
 
 </html>
